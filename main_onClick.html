@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual instrument</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./main_keyboard.html">keyboard</a>
+        <a href="./main_onClick.html">Gamemode</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Choose mode</button>
+    </div>
+    <div class="title">
+        <p id="appTitle">Visual Instrument</p>
+    </div>
+    <div class="piano">
+        <div class="keytype">
+            <canvas class="button"id="Q"></canvas>
+            <canvas class="button"id="W"></canvas>
+            <canvas class="button"id="E"></canvas>
+            <canvas class="button"id="R"></canvas>
+            <canvas class="button"id="T"></canvas>
+            <canvas class="button"id="Y"></canvas>
+            <canvas class="button"id="U"></canvas>
+            <canvas class="button"id="I"></canvas>
+            <canvas class="button"id="O"></canvas>
+            <canvas class="button"id="P"></canvas>
+
+        </div>
+        <div class="key">
+            <canvas class="note" id="C1"></canvas>
+            <canvas class="note" id="D1"></canvas>
+            <canvas class="note" id="E1"></canvas>
+            <canvas class="note" id="F1"></canvas>
+            <canvas class="note" id="G1"></canvas>
+            <canvas class="note" id="A1"></canvas>
+            <canvas class="note" id="B1"></canvas>
+            <canvas class="note" id="C2"></canvas>
+            <canvas class="note" id="D2"></canvas>
+            <canvas class="note" id="E2"></canvas>
+
+        </div>
+    </div>
+
+    <script src="./scripts/tone_onclick.js"></script>
+    <script src="./scripts/click.js"></script>
+</body>
+
+</html>
