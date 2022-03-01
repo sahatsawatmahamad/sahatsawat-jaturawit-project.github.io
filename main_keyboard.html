@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 
 
 <body >
+
+
     <div>
         <ul class="circles">
             <li></li>
@@ -29,21 +32,38 @@
             <li></li>
         </ul>
     </div>
-    
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./main.html">mouse</a>
-        <a href="./main_onClick.html">Gamemode</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; Choose mode</button>
-    </div>
-    
+
+
     <div class="title">
-        <p id="appTitle">Visual Instrument</p>
+        <p id="appTitle">Hand Therapy</p>
     </div>
+    <div class="option">
+        <div class="selectpage">
+            <p id="pageicon">
+                <a class="material-icons md-48" href="./main.html" style="color: white;">mouse</a>
+                <a class="material-icons md-48" href="./main_keyboard.html" style="color: white;">keyboard</a>
+                <a class="material-icons md-48" href="./main_onClick.html" style="color: white;">sports_esports</a>
+                <a class="material-icons md-48" href="./lesson.html" style="color: white;">waving_hand</a>
+            </p>
+        </div>
+        <div class="settingform">
+            <form>
+                <div class="set">
+                    <div class="custom-select" id="set"style="width:200px;">
+                        <select name="sound" id="sound">
+                            <option value="sound">Select sound:</option>
+                            <option value="piano">Piano</option>
+                            <option value="guitar">Guitar</option>
+                            <option value="bass">Bass</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
     <div class="piano">
         <div class="keytype">
             <canvas id="Q"></canvas>
@@ -53,10 +73,15 @@
             <canvas id="T"></canvas>
             <canvas id="Y"></canvas>
             <canvas id="U"></canvas>
-            <canvas id="I"></canvas>
-            <canvas id="O"></canvas>
-            <canvas id="P"></canvas>
-            
+            <canvas id="D"></canvas>
+            <canvas id="F"></canvas>
+            <canvas id="G"></canvas>
+            <canvas id="H"></canvas>
+            <canvas id="J"></canvas>
+            <canvas id="K"></canvas>
+            <canvas id="L"></canvas>
+            <canvas id="M"></canvas>
+
         </div>
         <div class="key">
             <canvas class="note" id="C1"></canvas>
@@ -69,10 +94,18 @@
             <canvas class="note" id="C2"></canvas>
             <canvas class="note" id="D2"></canvas>
             <canvas class="note" id="E2"></canvas>
-            
+            <canvas class="note" id="F2"></canvas>
+            <canvas class="note" id="G2"></canvas>
+            <canvas class="note" id="A2"></canvas>
+            <canvas class="note" id="B2"></canvas>
+            <canvas class="note" id="C3"></canvas>
         </div>
     </div>
     <script src="./scripts/tons.js"></script>
+    
+    <script src="./scripts/select.js"></script>
+
+
 </body>
 
 </html>

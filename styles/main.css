@@ -1,192 +1,242 @@
-body{
-    background-color: black;
-    /* background-color: #222222; */
-    /* background: repeating-linear-gradient(
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px;text-decoration:none; }
+
+
+body {
+  background-color: black;
+  /* background-color: #222222; */
+  /* background: repeating-linear-gradient(
     45deg,#2b2b2b 0%,#2b2b2b 10%,#222222 0%,#222222 50%
     )
     0 / 15px 15px; */
 }
 .key {
-    display: flex;
-    
-    position: absolute;
-    bottom: 1%;
-    justify-content: center;
+  display: flex;
+
+  position: absolute;
+  bottom: 1%;
+  justify-content: center;
 }
-.key canvas{
-    width: 8%;
-    height: 300px;
-    object-fit: none;
-    border: white;
-    border-style: solid;
-    border-width: thin;
+.key canvas {
+  width: 6%;
+  height: 300px;
+  object-fit: none;
+  border: white;
+  border-style: solid;
+  border-width: thin;
 }
-.keytype canvas{
-    width: 8%;
-    height: 650px;
-    object-fit: none;
-    border: none;
-    border-style: none;
-    border-width: thin;
+.keytype canvas {
+  width: 6.1%;
+  height: 650px;
+  object-fit: none;
+  border: none;
+  border-style: none;
+  border-width: thin;
+  z-index: -100;
 }
 .keytype {
-    display: flex;
-    position: absolute;
-    bottom: 1%;
-    justify-content: center;
+  display: flex;
+  position: absolute;
+  bottom: 1%;
+  justify-content: center;
 }
-.key canvas:hover{
-    transform: scale(1.05);
-    z-index: 1;
+.key canvas:hover {
+  transform: scale(1.05);
+  z-index: 1;
 }
-.tran{
-    transform: scale(1.05);
-    z-index: 1;
+.tran {
+  transform: scale(1.05);
+  z-index: 1;
 }
 .title p {
-    
-    text-align: center;
-    font-size: 8em;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1;
-    text-decoration: none;
-    color: #228dff;
-    font-family: "Iceland";
-    text-shadow: 2px 0 0 #fff;
-    }
-.title p:hover{
-    color: #fff;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+  text-align: center;
+  font-size: 8em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #228dff;
+  font-family: "Iceland";
+  text-shadow: 2px 0 0 #fff;
+}
+.title p:hover {
+  color: #fff;
+  animation: neon2 1.5s ease-in-out infinite alternate;
 }
 @keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
-        0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
-    }
-    to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
-        0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
-    }
-    }
-#C1,#C2,#C3{
-    background-color: purple;
-    opacity: 0.6;
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
 }
-#D1,#D2,#D3{
-    background-color: skyblue;
-    opacity: 0.6;
+#C1,
+#C2,
+#C3 {
+  background-color: #ECD5E3;
+  opacity: 0.6;
 }
-#E1,#E2,#E3{
-    background-color: blue;
-    opacity: 0.6;
+#D1,
+#D2,
+#D3 {
+  background-color: #D4F0F0;
+  opacity: 0.6;
 }
-#F1,#F2,#F3{
-    background-color: green;
-    opacity: 0.6;
+#E1,
+#E2,
+#E3 {
+  background-color: #ABDEE6;
+  opacity: 0.6;
 }
-#G1,#G2,#G3{
-    background-color: yellow;
-    opacity: 0.6;
+#F1,
+#F2,
+#F3 {
+  background-color: #CCE2CB;
+  opacity: 0.6;
 }
-#A1,#A2,#A3{
-    background-color: orange;
-    opacity: 0.6;
+#G1,
+#G2,
+#G3 {
+  background-color: #FFFFB5;
+  opacity: 0.6;
 }
-#B1,#B2,#B3{
-    background-color: red;
-    opacity: 0.6;
+#A1,
+#A2,
+#A3 {
+  background-color: #FFC8A2;
+  opacity: 0.6;
+}
+#B1,
+#B2,
+#B3 {
+  background-color: #FF968A;
+  opacity: 0.6;
 }
 #C1:hover {
-    opacity: 1;
+  opacity: 1;
 }
 #D1:hover {
-    opacity: 1;
-}#E1:hover {
-    opacity: 1;
-}#F1:hover {
-    opacity: 1;
-}#G1:hover {
-    opacity: 1;
-}#A1:hover {
-    opacity: 1;
-}#B1:hover {
-    opacity: 1;
-}#C2:hover {
-    opacity: 1;
+  opacity: 1;
+}
+#E1:hover {
+  opacity: 1;
+}
+#F1:hover {
+  opacity: 1;
+}
+#G1:hover {
+  opacity: 1;
+}
+#A1:hover {
+  opacity: 1;
+}
+#B1:hover {
+  opacity: 1;
+}
+#C2:hover {
+  opacity: 1;
 }
 #D2:hover {
-    opacity: 1;
-}#E2:hover {
-    opacity: 1;
+  opacity: 1;
+}
+#E2:hover {
+  opacity: 1;
+}
+#F2:hover {
+  opacity: 1;
+}
+#G2:hover {
+  opacity: 1;
+}
+#A2:hover {
+  opacity: 1;
+}
+#B2:hover {
+  opacity: 1;
+}
+#C3:hover {
+  opacity: 1;
 }
 
-.sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #f1f1f1;
-    transform: scale(1.25);
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 32px;
-    margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-  @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-  /* .area{
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+  transform: scale(1.25);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 32px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+/* .area{
       background: #4e54c8;  
       background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
       width: 100%;
@@ -194,119 +244,203 @@ body{
       
      
   } */
-  
-  .circles{
-      position: absolute;
-      z-index: -100;
-      top: 0;
-      left: 0;
-      width: 95%;
-      height: 95%;
-      overflow: hidden;
+
+.circles {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
   }
-  
-  .circles li{
-      position: absolute;
-      display: block;
-      list-style: none;
-      width: 20px;
-      height: 20px;
-      background: rgba(255, 255, 255, 0.2);
-      animation: animate 25s linear infinite;
-      bottom: -150px;
-      
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
+}
+
+/* formstyle */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #ffb3c6;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #ffb3c6;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.set{
+    display: flex;
+    justify-content: center;
+}
+.settingform{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.option{
+  display: flex;
+  justify-content: space-evenly;
+}
+.selectpage{
+  width: 400px;
+}
+#pageicon{
+  display: flex;
+  justify-content: space-evenly;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
   
-  .circles li:nth-child(1){
-      left: 25%;
-      width: 80px;
-      height: 80px;
-      animation-delay: 0s;
-  }
-  
-  
-  .circles li:nth-child(2){
-      left: 10%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 2s;
-      animation-duration: 12s;
-  }
-  
-  .circles li:nth-child(3){
-      left: 70%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 4s;
-  }
-  
-  .circles li:nth-child(4){
-      left: 40%;
-      width: 60px;
-      height: 60px;
-      animation-delay: 0s;
-      animation-duration: 18s;
-  }
-  
-  .circles li:nth-child(5){
-      left: 65%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 0s;
-  }
-  
-  .circles li:nth-child(6){
-      left: 75%;
-      width: 110px;
-      height: 110px;
-      animation-delay: 3s;
-  }
-  
-  .circles li:nth-child(7){
-      left: 35%;
-      width: 150px;
-      height: 150px;
-      animation-delay: 7s;
-  }
-  
-  .circles li:nth-child(8){
-      left: 50%;
-      width: 25px;
-      height: 25px;
-      animation-delay: 15s;
-      animation-duration: 45s;
-  }
-  
-  .circles li:nth-child(9){
-      left: 20%;
-      width: 15px;
-      height: 15px;
-      animation-delay: 2s;
-      animation-duration: 35s;
-  }
-  
-  .circles li:nth-child(10){
-      left: 85%;
-      width: 150px;
-      height: 150px;
-      animation-delay: 0s;
-      animation-duration: 11s;
-  }
-  
-  
-  
-  @keyframes animate {
-  
-      0%{
-          transform: translateY(0) rotate(0deg);
-          opacity: 1;
-          border-radius: 0;
-      }
-  
-      100%{
-          transform: translateY(-1000px) rotate(720deg);
-          opacity: 0;
-          border-radius: 50%;
-      }
-  
-  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual instrument</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/fadestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/hand.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+  <div>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+
+  <div class="title">
+    <p id="appTitle">Hand Therapy</p>
+  </div>
+  <div class="option">
+    <div class="selectpage">
+      <p id="pageicon">
+        <a class="material-icons md-48" href="./main.html" style="color: white;">mouse</a>
+        <a class="material-icons md-48" href="./main_keyboard.html" style="color: white;">keyboard</a>
+        <a class="material-icons md-48" href="./main_onClick.html" style="color: white;">sports_esports</a>
+        <a class="material-icons md-48" href="./lesson.html" style="color: white;">waving_hand</a>
+      </p>
+    </div>
+    <div class="settingform">
+      <div>
+        <form>
+          <div class="set">
+            <div class="custom-select" id="set" style="width:200px;">
+              <select name="hand" id="hand">
+                <option value="hand">Select hand:</option>
+                <option value="0">กำมือ</option>
+                <option value="1">ไล่นิ้วชี้</option>
+                <option value="2">ไล่นิ้วกลาง</option>
+                <option value="3">ไล่นิ้วนาง</option>
+                <option value="4">ไล่นิ้วก้อย</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+    <div class="buttonblock">
+      <button class="button62" onclick="Easy()">Easy</button>
+      <button class="button62" onclick="Normal()">Normal</button>
+      <button class="button62" onclick="Hard()">Hard</button>
+    </div>
+  </div>
+
+
+  <h1 style="color: white;text-align: end;">
+    <!-- <span id="countdown" style="color:white;">0</span>
+    seconds -->
+  </h1>
+  <div class="handtag">
+    <img id="img1" src="">
+    <img id="img2" src="">
+  </div>
+  <div style="display: flex;">
+    <div class="loading">
+
+      <div class="finger finger-1">
+        <div class="finger-item">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+      <div class="finger finger-2">
+        <div class="finger-item">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+      <div class="finger finger-3">
+        <div class="finger-item">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+      <div class="finger finger-4">
+        <div class="finger-item">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+      <div class="last-finger">
+        <div id="circle"></div>
+        <div class="last-finger-item" id="last-finger">
+          <span></span>
+          <i></i>
+        </div>
+        <div class="last-finger-item1" id="last-finger1">
+          <span></span>
+          <i></i>
+        </div>
+      </div>
+    </div>
+    <div>
+      <iframe width="420" height="315" src="" id="clip">
+      </iframe>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./scripts/select.js"></script>
+  <script src="./scripts/lesson.js"></script>
+
+
+</body>
+
+</html>

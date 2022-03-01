@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <button onClick="playSound(1)">Play sound</button>
+    <canvas id="myCanvas" width="850" height="250" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        var C = (function () {
+            context.beginPath();
+            context.moveTo(20, 20);
+            context.lineTo(60, 20);
+            context.moveTo(20, 20);
+            context.lineTo(20, 230);
+            context.moveTo(60, 20);
+            context.lineTo(60, 160);
+            context.moveTo(60, 160);
+            context.lineTo(75, 160);
+            context.moveTo(75, 160);
+            context.lineTo(75, 230);
+            context.moveTo(75, 230);
+            context.lineTo(20, 230);
+            context.stroke();
+            return (this);
+        });
+
+        var sound = new Audio(src="./sounds/piano_note/Music_Note/C.wav");
+        sound.preload = 'auto';
+        sound.load();
+
+        function playSound(volume) {
+            C();
+            var click = sound.cloneNode();
+            click.volume = volume;
+            click.play();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual instrument</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body >
+
+
+    <div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <div class="title">
+        <p id="appTitle">Hand Therapy</p>
+    </div>
+    <div class="option">
+        <div class="selectpage">
+            <p id="pageicon">
+                <a class="material-icons md-48" href="{{url_for('main') }}" style="color: white;">mouse</a>
+                <a class="material-icons md-48" href="{{('keyboard')}}" style="color: white;">keyboard</a>
+                <a class="material-icons md-48" href="{{('clicks')}}" style="color: white;">sports_esports</a>
+                <a class="material-icons md-48" href="{{('lesson')}}" style="color: white;">waving_hand</a>
+            </p>
+        </div>
+        <div class="settingform">
+            <form>
+                <div class="set">
+                    <div class="custom-select" id="set"style="width:200px;">
+                        <select name="sound" id="sound">
+                            <option value="sound">Select sound:</option>
+                            <option value="piano">Piano</option>
+                            <option value="guitar">Guitar</option>
+                            <option value="bass">Bass</option>
+                        </select>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="piano">
+        <div class="keytype">
+            <canvas id="Q"></canvas>
+            <canvas id="W"></canvas>
+            <canvas id="E"></canvas>
+            <canvas id="R"></canvas>
+            <canvas id="T"></canvas>
+            <canvas id="Y"></canvas>
+            <canvas id="U"></canvas>
+            <canvas id="D"></canvas>
+            <canvas id="F"></canvas>
+            <canvas id="G"></canvas>
+            <canvas id="H"></canvas>
+            <canvas id="J"></canvas>
+            <canvas id="K"></canvas>
+            <canvas id="L"></canvas>
+            <canvas id="M"></canvas>
+
+        </div>
+        <div class="key">
+            <canvas class="note" id="C1"></canvas>
+            <canvas class="note" id="D1"></canvas>
+            <canvas class="note" id="E1"></canvas>
+            <canvas class="note" id="F1"></canvas>
+            <canvas class="note" id="G1"></canvas>
+            <canvas class="note" id="A1"></canvas>
+            <canvas class="note" id="B1"></canvas>
+            <canvas class="note" id="C2"></canvas>
+            <canvas class="note" id="D2"></canvas>
+            <canvas class="note" id="E2"></canvas>
+            <canvas class="note" id="F2"></canvas>
+            <canvas class="note" id="G2"></canvas>
+            <canvas class="note" id="A2"></canvas>
+            <canvas class="note" id="B2"></canvas>
+            <canvas class="note" id="C3"></canvas>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='js/tons.js')}}"></script>
+    <script src="{{url_for('static', filename='js/select.js')}}"></script>
+
+</body>
+
+</html>
